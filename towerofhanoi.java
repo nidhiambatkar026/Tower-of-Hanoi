@@ -9,8 +9,8 @@ public class towerofhanoi {
         
            towerOfHanoi(n-1, Source, Destination, Helper);
            System.out.println("Transfer disk "+ n + " from "+Source+" to "+Destination);
-           return;
-}
+           towerOfHanoi(n-1, Helper, Source, Destination);
+        }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the Number of disk: ");
